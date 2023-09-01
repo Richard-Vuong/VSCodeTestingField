@@ -18,6 +18,7 @@ def threeem4():
 
 # threeem4()
 
+#guess the output of the print from bidmas()
 def bidmas():
     print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
 
