@@ -22,4 +22,20 @@ def threeem4():
 def bidmas():
     print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
 
-bidmas()
+print ("Hi " + "Lol")
+'''
+this is a multi line comment
+lol
+'''
+
+def main():
+    x = int(2)
+    y = int(4)
+    x = x/y
+    y /=x
+    print(y)
+main()
+
+a = 1//2
+
+print (a*3)
