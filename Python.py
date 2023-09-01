@@ -16,4 +16,9 @@ def hd291():
 def threeem4():
     print(3E-4)
 
-threeem4()
+# threeem4()
+
+def bidmas():
+    print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
+
+bidmas()
