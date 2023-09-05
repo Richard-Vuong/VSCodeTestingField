@@ -22,7 +22,7 @@ def threeem4():
 def bidmas():
     print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
 
-print ("Hi " + "Lol")
+# print ("Hi " + "Lol")
 '''
 this is a multi line comment
 lol
@@ -36,9 +36,9 @@ def main():
     print(y)
 # main()
 
-a = 1//2
+# a = 1//2
 
-print (a*3)
+# print (a*3)
 
 
 #Collatz's Hypothesis
@@ -79,3 +79,54 @@ def Collatz():
 
 
 
+def  stars():
+    i = 0
+    while i <=5:
+        i +=1
+        if i %2 == 0:
+            continue
+        print("*")
+
+''' why does this code return [1,1,1,1,2,3]
+list1 = [1,2,3]
+for v in range (3):
+    list1.insert(1,list1[v])
+print(list1)
+
+'''
+
+# l1,l2 = [1,2,3], []
+
+# for v in l1:
+#     l2.insert(0,v)
+
+# print(l2)
+
+
+
+def list1():
+    t = [[3-i for i in range (3)] for j in range (3)]
+    s = 0
+    for i in range(3):
+        s+=t[i][i]
+    print(s)
+
+# list1()
+
+
+# l1 = [[0,1,2,3] for i in range(2)]
+# print (l1[2][0])
+
+
+
+
+
+# for i in range(1):
+#     print("#")
+# else:
+#     print("#")
+
+
+
+l1 = [i for i in range(-1,2)]
+print(l1)
