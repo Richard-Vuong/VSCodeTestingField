@@ -113,20 +113,28 @@ def list1():
 
 # list1()
 
+'''
 
-# l1 = [[0,1,2,3] for i in range(2)]
-# print (l1[2][0])
-
-
-
+l1 = [[0,1,2,3] for i in range(2)]
+print (l1[2][0]) #this code results in an error
 
 
-# for i in range(1):
-#     print("#")
-# else:
-#     print("#")
+'''
 
 
+
+
+'''
+for i in range(1):
+    print("#")
+else:
+    print("#")
+'''
+
+
+'''
 
 l1 = [i for i in range(-1,2)]
 print(l1)
+
+'''
