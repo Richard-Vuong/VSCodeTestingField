@@ -111,7 +111,7 @@ def list1():
         s+=t[i][i]
     print(s)
 
-# list1()
+list1()
 
 '''
 
