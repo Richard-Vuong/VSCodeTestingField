@@ -111,12 +111,16 @@ def list1():
         s+=t[i][i]
     print(s)
 
-list1()
+# list1()
 
 '''
 
-l1 = [[0,1,2,3] for i in range(2)]
-print (l1[2][0]) #this code results in an error
+l1 = [[0,1,2,3,4] for i in range(2)]
+print (l1[1]) #list within a list
+
+
+# l1 = [[0,1,2,3] for i in range(2)]
+# print (l1[2][0]) #this code results in an error as there is no l1[2], only l1[0] or l1[1]
 
 
 '''
@@ -138,3 +142,35 @@ l1 = [i for i in range(-1,2)]
 print(l1)
 
 '''
+
+
+'''
+make a function that creates a leap year.
+
+Leap years are years that are divisible by 4, unless they are century years,to which they must be divisible by 400. E.G. the year 2000 is a leap year (divisible by 400)
+where as 1900 is not a leap year as 1900/4 results in a decimal remainder.
+'''
+
+def is_year_leap(year):
+#
+
+    if (year % 4 ==0 and year % 100 !=0) or year % 400 == 0:
+        return True
+        
+    else:
+        return False
+
+
+
+#
+
+test_data = [1900, 2000, 2016, 1987]
+test_results = [False, True, True, False]
+for i in range(len(test_data)):
+	yr = test_data[i]
+	print(yr,"->",end="")
+	result = is_year_leap(yr)
+	if result == test_results[i]:
+		print("OK")
+	else:
+		print("Failed")
