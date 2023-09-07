@@ -150,6 +150,7 @@ make a function that creates a leap year.
 Leap years are years that are divisible by 4, unless they are century years,to which they must be divisible by 400. E.G. the year 2000 is a leap year (divisible by 400)
 where as 1900 is not a leap year as 1900/4 results in a decimal remainder.
 '''
+'''
 
 def is_year_leap(year):
 #
@@ -174,3 +175,22 @@ for i in range(len(test_data)):
 		print("OK")
 	else:
 		print("Failed")
+
+'''
+
+
+def days_in_month(year, month):
+    # List of days in each month (assuming non-leap year)
+    days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    
+    # Check if the provided year and month are valid
+    if year < 1 or month < 1 or month > 12:
+        return None
+    
+    # Adjust February for leap years
+    if is_leap_year(year) and month == 2:
+        return 29
+    
+    # Return the number of days for the given month
+    return days_per_month[month - 1]
+
