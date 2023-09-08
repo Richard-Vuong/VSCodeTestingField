@@ -217,3 +217,28 @@ for i in range(1, 20):
 			print(i + 1, end=" ")
 print()
 '''
+
+
+
+'''
+
+
+Using the keyword "global" to have a variable propogate outside a function
+
+
+a = 1
+
+
+def fun():
+    global a
+    a = 2
+    print(a)
+
+
+a = 3
+fun()
+print(a)
+
+
+result outputs 2 then 2 again.
+'''
