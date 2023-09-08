@@ -267,3 +267,25 @@ for n in range(1, 6):  # testing
 
 
 '''
+
+
+
+''' fibonacci / recursion
+
+def fib(n):
+    n1,n2 = 1,1
+    if n < 1:
+        return None
+    if n <3:
+        return 1
+    for x in range(3, n+1):
+        n3 = n1+ n2
+        n1, n2 = n2, n3
+    
+    return n3
+    
+    
+for n in range(1, 10):  # testing
+    print(n, "->", fib(n))
+ 
+'''
