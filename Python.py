@@ -194,3 +194,26 @@ def days_in_month(year, month):
     # Return the number of days for the given month
     return days_per_month[month - 1]
 
+''' PRIME NUMBERS!!
+def is_prime(number):
+    if number <= 1:
+        return False  # Numbers less than or equal to 1 are not prime
+    
+    if number == 2:
+        return True  # 2 is prime
+    
+    if number % 2 == 0:
+        return False  # Even numbers greater than 2 are not prime
+
+    max_divisor = int(number**0.5) + 1
+    for divisor in range(3, max_divisor, 2):
+        if number % divisor == 0:
+            return False  # Found a divisor, not prime
+    
+    return True  # No divisors found, prime
+
+for i in range(1, 20):
+	if is_prime(i + 1):
+			print(i + 1, end=" ")
+print()
+'''
