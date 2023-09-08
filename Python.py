@@ -270,7 +270,7 @@ for n in range(1, 6):  # testing
 
 
 
-''' fibonacci / recursion
+''' fibonacci /
 
 def fib(n):
     n1,n2 = 1,1
@@ -288,4 +288,17 @@ def fib(n):
 for n in range(1, 10):  # testing
     print(n, "->", fib(n))
  
+'''
+
+
+
+''' fibonacci using recursion 
+def fib(n):
+    if n < 1:
+        return None
+    if n < 3:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+
+
 '''
