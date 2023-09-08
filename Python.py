@@ -240,5 +240,8 @@ fun()
 print(a)
 
 
+
+
+
 result outputs 2 then 2 again.
 '''
