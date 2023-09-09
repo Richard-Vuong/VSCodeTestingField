@@ -315,3 +315,46 @@ print(a * b * c)
 6 is printed out, as the tuples elements are "unpacked" into the a,b,c variables.
 
 '''
+
+
+
+'''
+
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = tup.count(2)
+
+print(duplicates)
+
+
+'''
+
+'''
+updating dictionaries
+
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+
+for item in (d1, d2):
+    d3.update(item)
+
+print(d3)
+
+'''
+
+'''converting tuples to dictionaries
+
+
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+
+colors_dictionary = dict(colors)
+print(colors_dictionary) 
+
+
+'''
+colors = (("green", "#008000"), ("blue", "#0000FF"))
+
+colors_dictionary = dict(colors)
+colors_dictionary.clear()
+print(colors_dictionary)
+
