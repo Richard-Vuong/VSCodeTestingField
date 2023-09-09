@@ -302,3 +302,16 @@ def fib(n):
 
 
 '''
+
+
+
+'''
+
+tup = 1, 2, 3
+a, b, c = tup
+
+print(a * b * c)
+
+6 is printed out, as the tuples elements are "unpacked" into the a,b,c variables.
+
+'''
