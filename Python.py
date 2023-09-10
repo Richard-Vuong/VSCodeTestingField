@@ -352,9 +352,32 @@ print(colors_dictionary)
 
 
 '''
-colors = (("green", "#008000"), ("blue", "#0000FF"))
 
-colors_dictionary = dict(colors)
-colors_dictionary.clear()
-print(colors_dictionary)
+# dictionary.clear() removes all the items in the dictionary without having to delete the 
+#dictionary variable itself.
 
+
+
+'''
+very VERY interesting code block with dictionaries
+
+dictionary = {'one':'two', 'three':'one', 'two':'three'}
+
+v = dictionary['one']
+
+for k in range(len(dictionary)):
+    v = dictionary[v]
+
+print(v)
+
+'''
+
+
+
+my = ['mary','had','a','little','lamb']
+
+def my_list(my_list):
+    del my_list[3]
+    my_list[3]='ram'
+
+print(my_list(my))
