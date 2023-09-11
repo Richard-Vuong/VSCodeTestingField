@@ -179,7 +179,7 @@ for i in range(len(test_data)):
 '''
 
 
-def days_in_month(year, month):
+'''def days_in_month(year, month):
     # List of days in each month (assuming non-leap year)
     days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     
@@ -192,7 +192,7 @@ def days_in_month(year, month):
         return 29
     
     # Return the number of days for the given month
-    return days_per_month[month - 1]
+    return days_per_month[month - 1]'''
 
 ''' PRIME NUMBERS!!
 def is_prime(number):
@@ -373,7 +373,7 @@ print(v)
 '''
 
 
-
+'''
 my = ['mary','had','a','little','lamb']
 
 def my_list(my_list):
@@ -381,3 +381,25 @@ def my_list(my_list):
     my_list[3]='ram'
 
 print(my_list(my))
+
+'''
+#
+
+
+
+
+'''lst = [[x for x in range(3)] for y in range(3)]
+    
+for r in range(3):
+        for c in range(3):
+            if lst[r][c] %2 !=0:
+                print("#")'''
+
+
+
+list = [1,2]
+
+for v in range(2):
+    list.insert(-1,list[v])
+
+print(list)
