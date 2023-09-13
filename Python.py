@@ -397,9 +397,22 @@ for r in range(3):
 
 
 
-list = [1,2]
+'''list = [1,2]
 
 for v in range(2):
     list.insert(-1,list[v])
 
 print(list)
+
+'''
+
+
+
+# Packages are a bunch of modules, modules are a bunch of functions 
+#therefore package > module > function 
+
+import sys
+
+for p in sys.path:
+    print(p)
+    
