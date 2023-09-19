@@ -1,7 +1,10 @@
 from module import suml, prodl
 
-list = [1,2,3,4,5]
+from sys import path
 
-print(suml(list))
-print(prodl(list))
-print(__name__)
+path.append("D:\\GitHub\\VSCodeTestingField\\packages")
+
+import pip
+
+
+

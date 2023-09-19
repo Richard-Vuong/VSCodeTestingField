@@ -411,8 +411,32 @@ print(list)
 # Packages are a bunch of modules, modules are a bunch of functions 
 #therefore package > module > function 
 
-import sys
+# import sys
+#
+# for p in sys.path:
+#     print(p)
+#
+# sys.path.append('...\\modules')
+#
+# for p in sys.path:
+#     print(p)
 
-for p in sys.path:
-    print(p)
-    
+# # Demonstrating the rfind() method:
+# print("tau tau tau".rfind("ta"))
+# print("tau tau tau".rfind("ta", 9))
+# print("tau tau    tau".rfind("ta", 3, 9))
+#
+
+# #%%
+# # Demonstrating the rstrip() method:
+# print("[" + " upsilon ".rstrip() + "]")
+# print("cisco.com".rstrip(".com"))
+
+#%%
+
+print(sorted(['3','1','2','3']))
+#%%
+
+#%%
+
+#%%
