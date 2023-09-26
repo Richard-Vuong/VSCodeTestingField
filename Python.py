@@ -1,26 +1,31 @@
-#Learning about print arguments (sep and end)
+# Learning about print arguments (sep and end)
 def arrow():
-    print("    *", "   * *", "  *   *"," *     *", "***   ***","  *   *","  *   *", "  *****", sep = "\n", end = "")
+    print("    *", "   * *", "  *   *", " *     *", "***   ***", "  *   *", "  *   *", "  *****", sep="\n", end="")
 
-#learning about literals 
 
-#this is an octal number with a decmial value equal to 83
+# learning about literals
+
+# this is an octal number with a decmial value equal to 83
 def octal83():
-    print("\n",0o123, sep="")
+    print("\n", 0o123, sep="")
 
-#0x123 is a hexadecimal number with a decimal = 291
+
+# 0x123 is a hexadecimal number with a decimal = 291
 def hd291():
     print(0x123)
 
-#can use E for exponent, e.g. 3E4 = 3 * 10^4, SIMILARLY, 3E-4 = 3 * 10^-4
+
+# can use E for exponent, e.g. 3E4 = 3 * 10^4, SIMILARLY, 3E-4 = 3 * 10^-4
 def threeem4():
     print(3E-4)
 
+
 # threeem4()
 
-#guess the output of the print from bidmas()
+# guess the output of the print from bidmas()
 def bidmas():
     print((5 * ((25 % 13) + 100) / (2 * 13)) // 2)
+
 
 # print ("Hi " + "Lol")
 '''
@@ -28,12 +33,15 @@ this is a multi line comment
 lol
 '''
 
+
 def main():
     x = int(2)
     y = int(4)
-    x = x/y
-    y /=x
+    x = x / y
+    y /= x
     print(y)
+
+
 # main()
 
 # a = 1//2
@@ -41,7 +49,7 @@ def main():
 # print (a*3)
 
 
-#Collatz's Hypothesis
+# Collatz's Hypothesis
 
 '''Scenario
 In 1937, a German mathematician named Lothar Collatz formulated an intriguing hypothesis (it still remains unproven) which can be described in the following way:
@@ -61,31 +69,32 @@ Hint: the most important part of the problem is how to transform Collatz's idea 
 
 Test your code using the data we've provided.'''
 
+
 def Collatz():
     c0 = int(input("Enter a non-negative, non-zero integer: "))
 
     while c0 <= 0:
         c0 = int(input("Enter a non-negative, non-zero integer: "))
 
-    while c0 !=1:
-        if c0%2 == 0:
-            c0 = c0/2
+    while c0 != 1:
+        if c0 % 2 == 0:
+            c0 = c0 / 2
             print(c0)
         else:
-            c0 = 3*c0+1
-            print (c0)
+            c0 = 3 * c0 + 1
+            print(c0)
 
     print("end of loop")
 
 
-
-def  stars():
+def stars():
     i = 0
-    while i <=5:
-        i +=1
-        if i %2 == 0:
+    while i <= 5:
+        i += 1
+        if i % 2 == 0:
             continue
         print("*")
+
 
 ''' why does this code return [1,1,1,1,2,3]
 list1 = [1,2,3]
@@ -95,6 +104,7 @@ print(list1)
 
 '''
 
+
 # l1,l2 = [1,2,3], []
 
 # for v in l1:
@@ -103,13 +113,13 @@ print(list1)
 # print(l2)
 
 
-
 def list1():
-    t = [[3-i for i in range (3)] for j in range (3)]
+    t = [[3 - i for i in range(3)] for j in range(3)]
     s = 0
     for i in range(3):
-        s+=t[i][i]
+        s += t[i][i]
     print(s)
+
 
 # list1()
 
@@ -125,9 +135,6 @@ print (l1[1]) #list within a list
 
 '''
 
-
-
-
 '''
 for i in range(1):
     print("#")
@@ -135,14 +142,12 @@ else:
     print("#")
 '''
 
-
 '''
 
 l1 = [i for i in range(-1,2)]
 print(l1)
 
 '''
-
 
 '''
 make a function that creates a leap year.
@@ -177,7 +182,6 @@ for i in range(len(test_data)):
 		print("Failed")
 
 '''
-
 
 '''def days_in_month(year, month):
     # List of days in each month (assuming non-leap year)
@@ -218,8 +222,6 @@ for i in range(1, 20):
 print()
 '''
 
-
-
 '''
 
 
@@ -246,8 +248,6 @@ print(a)
 result outputs 2 then 2 again.
 '''
 
-
-
 ''' FACTORIAL FUNCTION
 
 def factorial_function(n):
@@ -267,8 +267,6 @@ for n in range(1, 6):  # testing
 
 
 '''
-
-
 
 ''' fibonacci /
 
@@ -290,8 +288,6 @@ for n in range(1, 10):  # testing
  
 '''
 
-
-
 ''' fibonacci using recursion 
 def fib(n):
     if n < 1:
@@ -303,8 +299,6 @@ def fib(n):
 
 '''
 
-
-
 '''
 
 tup = 1, 2, 3
@@ -315,8 +309,6 @@ print(a * b * c)
 6 is printed out, as the tuples elements are "unpacked" into the a,b,c variables.
 
 '''
-
-
 
 '''
 
@@ -354,8 +346,7 @@ print(colors_dictionary)
 '''
 
 # dictionary.clear() removes all the items in the dictionary without having to delete the 
-#dictionary variable itself.
-
+# dictionary variable itself.
 
 
 '''
@@ -372,7 +363,6 @@ print(v)
 
 '''
 
-
 '''
 my = ['mary','had','a','little','lamb']
 
@@ -386,16 +376,12 @@ print(my_list(my))
 #
 
 
-
-
 '''lst = [[x for x in range(3)] for y in range(3)]
     
 for r in range(3):
         for c in range(3):
             if lst[r][c] %2 !=0:
                 print("#")'''
-
-
 
 '''list = [1,2]
 
@@ -407,9 +393,8 @@ print(list)
 '''
 
 
-
-# Packages are a bunch of modules, modules are a bunch of functions 
-#therefore package > module > function 
+# Packages are a bunch of modules, modules are a bunch of functions
+# therefore package > module > function
 
 # import sys
 #
@@ -432,11 +417,46 @@ print(list)
 # print("[" + " upsilon ".rstrip() + "]")
 # print("cisco.com".rstrip(".com"))
 
-#%%
+# %%
 
-print(sorted(['3','1','2','3']))
-#%%
+# print(sorted(['3','1','2','3']))
+# %%
 
-#%%
+# %%
 
-#%%
+# # %%
+# class A:
+#     def __str__(self):
+#         return 'a'
+#
+#
+# class B:
+#     def __str__(self):
+#         return 'b'
+#
+#
+# class C(A, B):
+#     pass
+#
+#
+# o = C()
+# print(o)
+
+
+class A:
+    def a(self):
+        print('a')
+
+
+class B:
+    def a(self):
+        print('b')
+
+
+class C(A, B):
+    def c(self):
+        self.a()
+
+
+o = C()
+o.c()
