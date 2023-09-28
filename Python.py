@@ -443,20 +443,226 @@ print(list)
 # print(o)
 
 
-class A:
-    def a(self):
-        print('a')
+# class A:
+#     def a(self):
+#         print('a')
 
 
-class B:
-    def a(self):
-        print('b')
+# class B:
+#     def a(self):
+#         print('b')
 
 
-class C(A, B):
-    def c(self):
-        self.a()
+# class C(A, B):
+#     def c(self):
+#         self.a()
 
 
-o = C()
-o.c()
+# o = C()
+# o.c()
+
+
+
+# import os
+# os.mkdir('thumbnails')
+# os.chdir('thumbnails')
+# sizes = ['small', 'medium', 'large']
+# for size in sizes: os.mkdir(size)
+# print(os.listdir())
+
+# from datetime import date
+# dat1 = date(1992,1,16)
+# dat2 = date(1991,2,5)
+# print(dat1-dat2)
+
+
+# my_tuple = (range(0,7))
+# foo = list(filter(lambda x: x-0 and x - 1, my_tuple))
+# print(foo)
+
+
+# import calendar
+# c = calendar.Calendar()
+# for weekday in c.iterweekdays():
+#     print(weekday, end = " ")
+
+# b = bytearray(3)
+# print(b)
+
+# def fun(n):
+#     s = '+'
+#     for i in range(n):
+#         s += s
+#         yield s
+
+# for x in fun(2):
+#     print(x)
+
+
+
+
+# import os 
+# os.mkdir('pictures')
+# os.chdir('pictures')
+# os.mkdir('thumbnails')
+# os.chdir('thumbnails')
+# os.mkdir('tmp')
+# os.chdir('../')
+
+# print(os.getcwd())
+
+
+# from datetime import timedelta
+# delta = timedelta(weeks=1,days=7,hours=11)
+# print(delta*3)
+
+# try: raise Exception(1,2,3)
+# except Exception as e:
+#     print(e.args)
+
+# import calendar
+# calendar.setfirstweekday(calendar.SUNDAY)
+# print(calendar.weekheader(7))
+
+# class A:
+#     def __init__(self, v=2):
+#         self.v = v
+    
+#     def set(self,v = 1):
+#         self.v += v
+#         return self.v
+
+# a = A()
+# b = a
+# b.set()
+# print(a.v)
+
+
+# import random
+# print(random.randrange(0,1))
+
+# x = '\\\\'
+# print(len(x))
+
+
+# class A:
+#     def __init__(self, v):
+#         self.__a = v+1
+
+# a = A(0)
+# print(a.__a)
+
+
+
+
+'''class A():
+    def __init__(self):
+        self.var = 'a'
+    def multiply(self,times):
+        self.var *= times
+class B(A):
+    B = 'b'
+    def restrict(self,limit):
+        self.var = self.var[:limit]
+class C(A):
+    def __init__(self):
+        self.c = 'c'
+        C = 'c'
+
+print (hasattr(B, "B") + hasattr(A,'restrict') + hasattr(C, "C") + hasattr(C,'multiply'))'''
+
+
+# class A():
+#     pass
+
+# class B(A):
+#     pass
+
+# b = B()
+# print(isinstance(b,A))
+
+
+
+# x = '513823'
+# index = '3'
+# c = 0
+# while index !='-1':
+#     index = str(x.rfind(index))
+#     c +=1
+
+# print(c)
+
+# print('Under' < 'above')
+
+# print ('o'+'m'+'g' in 'OMGOMG'.lower())
+
+
+
+# print(len('% IamString *%*'.rstrip('*%').lstrip("% ")))
+# print(len("\n\\n\\\n"))
+
+
+
+'''import math
+class A():
+    def __init__(self):
+        self.v = 17
+    def __my_operation(self):
+                       self.v = math.powe((self.v + 5)//3,2)
+class B():
+     def my_operation(self):
+          self.v = math.factorial(math.floor(self.v/8))
+class C(B,A):
+     def my_operation(self):
+          self.v += self.v//3
+
+c = C.__bases__[1]
+c.my_operation()'''
+
+'''class A():
+    pass
+class B():
+    pass
+class C():
+    pass
+class D(C,A):
+    pass
+class E(D,B):
+    pass
+
+print(issubclass(C,C))
+print(issubclass(B,D))
+print(issubclass(D,B))
+print(issubclass(E,C))
+print(issubclass(A,D))'''
+
+
+'''class A():
+    X = 0
+    def __init(self):
+        A.X += 1
+        self.y = 'string'
+        self.z = [1,2,3]
+    def selection(self):
+        self.y = ''.join([self.y[index] for index in self.z])
+        self.z[0] += A.X
+
+class B(A):
+    def reset(self):
+        self.y = 'string'
+
+
+a = B()
+a.selection()
+a.reset()
+b = A()
+a.selection()
+print(a.y)'''
+
+
+
+# import random
+# print(random.sample(range(7), k = 6))
+
+
+print(list(map(lambda x: x-1 or x -3, [1,2,3])))
