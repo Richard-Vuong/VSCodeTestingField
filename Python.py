@@ -555,7 +555,7 @@ print(list)
 
 
 
-'''class A():
+class A():
     def __init__(self):
         self.var = 'a'
     def multiply(self,times):
@@ -569,7 +569,8 @@ class C(A):
         self.c = 'c'
         C = 'c'
 
-print (hasattr(B, "B") + hasattr(A,'restrict') + hasattr(C, "C") + hasattr(C,'multiply'))'''
+print (hasattr(B, "B") + hasattr(A,'restrict') + hasattr(C, "C") + hasattr(C,'multiply'))
+
 
 
 # class A():
@@ -665,4 +666,6 @@ print(a.y)'''
 # print(random.sample(range(7), k = 6))
 
 
-print(list(map(lambda x: x-1 or x -3, [1,2,3])))
+# print(list(map(lambda x: x-1 or x -3, [1,2,3])))
+
+
