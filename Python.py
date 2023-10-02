@@ -520,9 +520,35 @@ print(list)
 # except Exception as e:
 #     print(e.args)
 
-# import calendar
-# calendar.setfirstweekday(calendar.SUNDAY)
-# print(calendar.weekheader(7))
+'''import calendar
+
+calendar.setfirstweekday(calendar.SUNDAY)
+print(calendar.weekheader(6))
+'''
+
+# string = str(**1%2)
+# print("This is: ", string)
+# li = [i for i in string]
+# print(li[-1])
+
+
+list = [0,1,2,3,4]
+
+try:
+    a = list[4]
+except IndexError:
+    print("lol")
+else:
+    print("None")
+
+'''class A():
+    __var = 12
+
+    def __init__(self, var=1):
+        self.__var = var  # Make __var an instance variable by using self
+
+obj = A(40)
+print(_A.__var)'''
 
 # class A:
 #     def __init__(self, v=2):
@@ -555,7 +581,7 @@ print(list)
 
 
 
-class A():
+'''class A():
     def __init__(self):
         self.var = 'a'
     def multiply(self,times):
@@ -570,6 +596,7 @@ class C(A):
         C = 'c'
 
 print (hasattr(B, "B") + hasattr(A,'restrict') + hasattr(C, "C") + hasattr(C,'multiply'))
+'''
 
 
 
@@ -582,16 +609,41 @@ print (hasattr(B, "B") + hasattr(A,'restrict') + hasattr(C, "C") + hasattr(C,'mu
 # b = B()
 # print(isinstance(b,A))
 
+# gen = (x for x in range(100))
+# print(gen) 
+'''
+import math
+print(math.ceil(math.sqrt(math.factorial(math.floor(2.5)))))
+'''
+
+'''s1 = 'dog cat rat'
+
+s2 = s1.split()
+print(s2[0:4])'''
+
+'''
+class Class:
+    _var = 5
+    __bar = 10
+    def __init__(self):
+        self._prop=1
+        self.__poop = 2
+
+o = Class()
+print(o._Class__poop)
+'''
 
 
-# x = '513823'
-# index = '3'
-# c = 0
-# while index !='-1':
-#     index = str(x.rfind(index))
-#     c +=1
+'''x = '513823'
 
-# print(c)
+index = '3'
+c = 0
+while index !='-1':
+    index = str(x.rfind(index))
+    c +=1
+    print(index)
+
+print(c)'''
 
 # print('Under' < 'above')
 
