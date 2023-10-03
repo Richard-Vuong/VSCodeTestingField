@@ -396,15 +396,20 @@ print(list)
 # Packages are a bunch of modules, modules are a bunch of functions
 # therefore package > module > function
 
-# import sys
-#
-# for p in sys.path:
-#     print(p)
-#
-# sys.path.append('...\\modules')
-#
-# for p in sys.path:
-#     print(p)
+'''import sys
+
+
+for p in sys.path:
+    print(p)
+
+sys.path.append('...\\modules')
+
+for p in sys.path:
+    print(p)'''
+
+
+print(1/1)
+
 
 # # Demonstrating the rfind() method:
 # print("tau tau tau".rfind("ta"))
@@ -532,15 +537,37 @@ print(calendar.weekheader(6))
 # print(li[-1])
 
 
-list = [0,1,2,3,4]
+# list = [0,1,2,3,4]
 
-try:
-    a = list[4]
-except IndexError:
-    print("lol")
-else:
-    print("None")
+# try:
+#     a = list[4]
+# except IndexError:
+#     print("lol")
+# else:
+#     print("None")
 
+
+
+
+'''class A():
+    top = 1
+    val = 100
+    def __init__(self):
+        self.val = 1
+class B(A):
+    mid = 2
+    def __init__(self):
+        self.val = 10
+        self.__val = 3
+class C(B):
+    bot = 3
+    def __init__(self):
+        pass
+
+obj_c = C()
+
+print(obj_c.val)
+'''
 '''class A():
     __var = 12
 
@@ -721,3 +748,32 @@ print(a.y)'''
 # print(list(map(lambda x: x-1 or x -3, [1,2,3])))
 
 
+from os import strerror
+'''
+try:
+	fo = open('newtext.txt', 'wt') # A new file (newtext.txt) is created.
+	for i in range(10):
+		s = "line #" + str(i+1) + "\n"
+		for ch in s:
+			fo.write(ch)
+	fo.close()
+except IOError as e:
+	print("I/O error occurred: ", strerror(e.errno))'''
+
+
+
+# s = open('newtext.txt', 'wt')
+# s.write("LO9879878OOOl \n ")
+# s.write("testing the append")
+# s.close()
+
+
+# print('abc' > 'a')
+
+# try:
+#     assert 0, "This is an assertion error!"
+# except AssertionError as e:
+#     print(f"{e} Wow this really works!")
+
+import random
+print(random.randint(1,10))
