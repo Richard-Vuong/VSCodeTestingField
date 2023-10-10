@@ -345,6 +345,7 @@ print(colors_dictionary)
 
 '''
 
+
 # dictionary.clear() removes all the items in the dictionary without having to delete the 
 # dictionary variable itself.
 
@@ -408,7 +409,7 @@ for p in sys.path:
     print(p)'''
 
 
-print(1/1)
+# print(1/1)
 
 
 # # Demonstrating the rfind() method:
@@ -429,21 +430,21 @@ print(1/1)
 
 # %%
 
-# # %%
+# %%
 # class A:
-#     def __str__(self):
-#         return 'a'
-#
-#
-# class B:
-#     def __str__(self):
-#         return 'b'
-#
-#
-# class C(A, B):
+#     # def __str__(self):
+#         # return 'a'
 #     pass
-#
-#
+
+# class B:
+#     # def __str__(self):
+#         # return 'b'
+#     pass
+
+# class C(B, A):
+#     pass
+
+
 # o = C()
 # print(o)
 
@@ -466,7 +467,14 @@ print(1/1)
 # o = C()
 # o.c()
 
+# import platform
+# print(platform.python_version_tuple())
 
+# import os
+
+
+# list = [1,2,3,4]
+# print(list[-6])
 
 # import os
 # os.mkdir('thumbnails')
@@ -503,7 +511,21 @@ print(1/1)
 # for x in fun(2):
 #     print(x)
 
+# class A():
+#     var = 1
+#     b = 2
+#     def __init__(self, chav):
+#         self.chav = 5
 
+
+# print(A.__dict__)
+# obj = A(5)
+# print(obj.__dict__)
+
+
+l1 = [0,1,2,3,4]
+l2 = list(filter(lambda n: n*n & 1, l1))
+print(l2)
 
 
 # import os 
@@ -775,5 +797,29 @@ except IOError as e:
 # except AssertionError as e:
 #     print(f"{e} Wow this really works!")
 
-import random
-print(random.randint(1,10))
+# import random
+# print(random.randint(1,10))
+
+
+# def f():
+#     pass
+
+# b = f()
+# print(type(f()))
+# print(isinstance(b,type(f())))
+
+'''class A:
+    def __init__(self):
+        self.var = 0
+
+class B(A):
+    var = 2
+
+class C(A):
+    var = 4
+
+class D(C,B):
+    pass
+
+obj = D()
+print(obj.var)'''
