@@ -523,9 +523,37 @@ for p in sys.path:
 # print(obj.__dict__)
 
 
-l1 = [0,1,2,3,4]
-l2 = list(filter(lambda n: n*n & 1, l1))
-print(l2)
+# class A():
+#     var = 2
+#     def __init__(self):
+#         self.var = 1
+
+# class B(A):
+#     var  = 3
+#     def __init__(self):
+
+#     #     super().__init__()
+#         pass
+# oa = A()
+# obj = B()
+# print(obj.var)
+# print(isinstance(obj, type(oa)))  # Output will be True
+
+# print(isinstance(obj,type(oa)))
+
+
+
+def f1(p1,p2):
+    p1 = 55
+    p2[0] = 42
+    return p1
+
+x, y = 3, [1,2,3]
+
+f1(x,y)
+
+print(x,y[0])
+
 
 
 # import os 
